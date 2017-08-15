@@ -26,14 +26,37 @@ $mainSize: 1.6rem
 		width: 3rem
 	&:hover
 		color: $darkerColor
+%CardStyle
+	border-radius: 2rem
+	overflow: hidden
+	background-color: #fff
+	position: absolute
+	display: block
+	left: 0
+	top: 10rem
+	opacity: 0
+	transform: scale(0)
+	box-shadow: 1px 10px 20px 2px rgba(168, 171, 175, 0.2), -10px 1px 20px 2px rgba(168, 135, 134, 0.2)
+%shadow
+	transition: all 0.3s ease-in-out
+	box-shadow: 1px 2px 5px rgba(150, 150, 150, 0.8), -1px 2px 5px rgba(150, 150, 150, 0.2)
+	&:hover
+		box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9)
+.animate-card
+	transform: scale(1) !important
+	opacity: 1 !important
+	transition: all 0.5s ease-in-out
 
 //========== HTML initial styles ===================
 html 
 	font-size: 10px
 body 
+	font-size: $mainSize
 	overflow-x: hidden
-	height: 3000px
+	min-height: 800px
 	background-color: #f7f7f7
+	h1, h2, h3
+		font-family: 'Archivo black'
 .fixed-nav
 	padding-bottom: 1rem
 	padding-top: 1rem
@@ -59,6 +82,8 @@ header
 			float: right
 			li 
 				@extend %liMenuStyle
+				&:hover
+					cursor: pointer
 				&.active
 					color: $darkerColor
 					&:after
@@ -125,12 +150,10 @@ header
 //============ First Card ( HOME ) ===================
 
 main 
-	margin: 100px 100px
+	padding: 10rem 100px
+	position: relative
 	#home
-		border-radius: 2rem
-		overflow: hidden
-		background-color: #fff
-		box-shadow: 1px 10px 20px 2px rgba(168, 171, 175, 0.2), -10px 1px 20px 2px rgba(168, 135, 134, 0.2)
+		@extend %CardStyle
 		
 		//============= Home card header ======================
 		
@@ -164,7 +187,6 @@ main
 				color: #fff
 				padding: 70px 0px
 				h1 
-					font-family: 'Archivo Black'
 					font-size: $mainSize*3
 					font-weight: bolder
 				.social-icons i 
@@ -173,8 +195,8 @@ main
 			padding: 5rem 50px
 			.intro 
 				h3
+					font-size: 2*$mainSize
 					margin-top: 0
-					font-family: 'Archivo Black'
 				span 
 					color: $mainColor
 				p 
@@ -182,7 +204,6 @@ main
 				button 
 					border: none
 					background: #fff
-					box-shadow: 1px 2px 5px rgba(150, 150, 150, 0.8), -1px 2px 5px rgba(150, 150, 150, 0.2)
 					border-radius: 5px
 					text-transform: uppercase
 					font-size: $mainSize*0.8
@@ -190,9 +211,7 @@ main
 					padding: 1rem 2rem
 					margin-top: 3rem
 					margin-bottom: 3rem
-					transition: all 0.3s ease-in-out
-					&:hover
-						box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9)
+					@extend %shadow
 			address 
 				color: $darkColor
 				p:nth-child(4)
@@ -200,14 +219,73 @@ main
 				abbr 
 					border: none
 					text-decoration: none
+	#resume
+		@extend %CardStyle
+		.header
+			h1
+				background-color: $mainColor
+				margin: 0
+				padding: 3rem 0
+				font-size: $mainSize*3
+				color: #fff
+		.resume-body
+			padding: 5rem 70px
+			h3
+				margin-top: 0
+				font-size: $mainSize
+			h2 
+				margin-bottom: 20px
+				font-size: $mainSize*2			
+			span 
+				color: $mainColor 
+			.history
+				display: flex
+				justify-content: space-between
+				.education, .experience
+					border-left: 2px solid #eee
+					padding: 0 3rem
+				.edu-item, .exp-item
+					@extend %shadow
+					position: relative
+					padding: 20px
+					margin-bottom: 2rem
+					border-left: 2px solid $mainColor
+					&:after
+						content: ''
+						position: absolute
+						height: 2px
+						width: 3rem
+						left: 0
+						top: 3rem
+						transform: translate(-100%, -100%)
+						background-color: $mainColor
+					&:before
+						content: ''
+						position: absolute
+						height: 1.3rem
+						width: 1.3rem
+						border-radius: 50%
+						border: 2px solid $mainColor
+						background-color: #fff
+						left: 0
+						top: 3rem
+						transform: translate(-4rem, -50%)
+						z-index: 1
 
-				
+@media (min-resolution: 192dpi)
+	html 
+		font-size: 20px
 @media (max-width: 960px)
 	nav
 		display: none
 	.mob-nav
 		display: block !important
 		background-color: $mainColor
+	 
+	.history
+		display: initial !important
+		.education , .experience
+			padding-right: 0 !important
 	header
 		padding: 0 !important
 	.profile img

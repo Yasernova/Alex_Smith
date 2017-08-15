@@ -13,12 +13,12 @@
 	 <nav class='container'>
 			<span>Alex <span id="colored">Smith</span></span>
 			<ul>
-				<li class="active">Home</li>
-				<li>Resume</li>
-				<li>Services</li>
-				<li>Portfolio</li>
-				<li>Blog</li>
-				<li>Contact</li>
+				<li class="active" data-id='home'>Home</li>
+				<li data-id="resume">Resume</li>
+				<li data-id="services">Services</li>
+				<li data-id="portifolio">Portfolio</li>
+				<li data-id="blog">Blog</li>
+				<li data-id="contact">Contact</li>
 			</ul>
 		</nav>
 		<div class="mob-nav">
@@ -27,17 +27,17 @@
 				<span>Alex Smith</span>
 			</div>
 			<ul class='hide-menu'>
-				<li class="active-mob-li">Home</li>
-				<li>Resume</li>
-				<li>Services</li>
-				<li>Portfolio</li>
-				<li>Blog</li>
-				<li>Contact</li>
+				<li class="active-mob-li" data-id='home'>Home</li>
+				<li data-id="resume">Resume</li>
+				<li data-id="services">Services</li>
+				<li data-id="portifolio">Portfolio</li>
+				<li data-id="blog">Blog</li>
+				<li data-id="contact">Contact</li>
 			</ul>
 		</div>
 	</header>
 	<main class='container'>
-	 <section id='home'>
+	 <section id='home' class="animate-card">
 			<div class='header'>
 				<div class="row">
 					<div class="col-md-4 col-xs-12 profile-wraper">
@@ -48,7 +48,7 @@
 					<div class="text-center info col-md-8 col-xs-12">
 					<h1>Alex Smith</h1>
 					<p>web designer</p>
-					<p> UI developer</p>
+					<p>UI developer</p>
 					<div class="social-icons">
 						<i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
 						<i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
@@ -87,7 +87,52 @@
 					</div>
 				</div>
 			</div>
-	 </section>
+		</section>
+		<section id="resume">
+			<div class="header">
+				<h1 class='text-center'>Resume</h1>
+			</div>
+			<div class="resume-body">
+				<div class="history row">
+					<div class="education col-xs-12 col-md-6 ">
+						<h2>Education</h2>
+						<div class="edu-item">
+							<h3>Specialization Course</h3>
+							<p><span>2010</span> | apple.inc</p>
+							<p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+						</div>
+						<div class="edu-item">
+							<h3>Specialization Course</h3>
+							<p><span>2011</span> | Amazon</p>
+							<p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+						</div>
+						<div class="edu-item">
+							<h3>Specialization Course</h3>
+							<p><span>2012</span> | IBM</p>
+							<p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+						</div>
+					</div>
+					<div class="experience col-xs-12 col-md-6">
+						<h2>Experience</h2>
+						<div class="edu-item">
+							<h3>Specialization Course</h3>
+							<p><span>2010</span> | apple.inc</p>
+							<p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+						</div>
+						<div class="edu-item">
+							<h3>Specialization Course</h3>
+							<p><span>2011</span> | Amazon</p>
+							<p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+						</div>
+						<div class="edu-item">
+							<h3>Specialization Course</h3>
+							<p><span>2012</span> | IBM</p>
+							<p>Mauris magna sapien, pharetra consectetur fringilla vitae, interdum sed tortor.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
 	<script src="js\jquery-3.2.0.min.js"></script>
 	<script src="js\plugins.js"></script>

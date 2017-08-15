@@ -28,6 +28,24 @@ $(function(){
 		
 		}
 	);
+	var $liNav = $('[data-id]'),
+					$largeScrMenu = $('nav li'),
+					$mobScrMenu = $('.mob-nav li');
+
+
+	$largeScrMenu.on('click', function(){
+		$(this).addClass('active', 500).siblings().removeClass('active', 500);
+	});
+	$mobScrMenu.on('click', function(){
+		$(this).addClass('active-mob-li', 500).siblings().removeClass('active-mob-li', 500);
+		$mobMenu.toggleClass('show-menu');
+		$mobMenu.toggleClass('hide-menu');
+	});
+
+	$liNav.on('click', function(){
+		var $thisID = $(this).attr('data-id');
+		$('#' + $thisID ).addClass('animate-card', 500).siblings().removeClass('animate-card', 500);
+	})
 	
 
 

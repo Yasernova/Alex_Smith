@@ -21,6 +21,7 @@ _______________________________________________________________
   => Try to imagine the final product for easier design.
   => Spaces in code will never hurt.
   => Fixed nav should positioned Fixed ALL THE TIME.
+  => Felxbox .. justify content
 _______________________________________________________________
 
 - VS code tips:
