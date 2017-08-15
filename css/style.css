@@ -1,0 +1,190 @@
+header nav > ul li, header .mob-nav ul li {
+  list-style: none;
+  padding: 0rem 0rem 0.5rem;
+  margin: 0;
+  display: inline;
+  margin-left: 2.5rem;
+  position: relative; }
+  header nav > ul li:after, header .mob-nav ul li:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f44336;
+    transition: all 0.3s ease; }
+  header nav > ul li:hover:after, header .mob-nav ul li:hover:after {
+    width: 3rem; }
+  header nav > ul li:hover, header .mob-nav ul li:hover {
+    color: #494949; }
+
+html {
+  font-size: 10px; }
+
+body {
+  overflow-x: hidden;
+  height: 3000px;
+  background-color: #f7f7f7; }
+
+.fixed-nav {
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 1px rgba(168, 171, 175, 0.2); }
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
+  top: 0;
+  display: block;
+  transition: all 0.5s ease-in-out; }
+  header nav > ul {
+    color: #a8abaf;
+    font-size: 1.6rem;
+    padding: 0;
+    margin: 0;
+    float: right; }
+    header nav > ul li.active {
+      color: #494949; }
+      header nav > ul li.active:after {
+        width: 3rem; }
+  header nav span {
+    color: #555;
+    font-size: 2.08rem;
+    font-weight: bold; }
+    header nav span #colored {
+      color: #f44336; }
+  header .mob-nav {
+    display: none;
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: relative; }
+    header .mob-nav span {
+      font-family: "Archivo black";
+      color: #fff;
+      font-size: 1.6rem; }
+    header .mob-nav i {
+      float: right; }
+      header .mob-nav i:before {
+        color: #fff;
+        font-size: 2.5rem; }
+    header .mob-nav ul {
+      position: absolute;
+      top: 100%;
+      right: -100%;
+      height: 100vh;
+      z-index: 1;
+      margin: 0;
+      padding: 2rem 0rem;
+      background-color: #f44336; }
+      header .mob-nav ul li {
+        text-align: center;
+        font-size: 1.6rem;
+        padding: 1rem 30vw;
+        margin: 0;
+        color: #e5e5e5;
+        display: block; }
+        header .mob-nav ul li:after {
+          background-color: #fff; }
+        header .mob-nav ul li:hover {
+          color: #fff; }
+        header .mob-nav ul li.active-mob-li {
+          color: #fff; }
+          header .mob-nav ul li.active-mob-li:after {
+            width: 3rem; }
+      header .mob-nav ul.show-menu {
+        right: 0%;
+        transition: all 0.5s ease-in-out; }
+      header .mob-nav ul.hide-menu {
+        right: -100%;
+        transition: all 0.5s ease-in-out; }
+
+main {
+  margin: 100px 100px; }
+  main #home {
+    border-radius: 2rem;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 1px 10px 20px 2px rgba(168, 171, 175, 0.2), -10px 1px 20px 2px rgba(168, 135, 134, 0.2); }
+    main #home .header {
+      background-color: #f44336;
+      position: relative; }
+      main #home .header .profile-wraper {
+        margin-bottom: -80px;
+        margin-top: 80px;
+        transition: all 0.3s ease; }
+        main #home .header .profile-wraper:hover {
+          margin-bottom: -60px;
+          margin-top: 60px; }
+        main #home .header .profile-wraper .profile {
+          width: 90%;
+          margin: 0 auto; }
+          main #home .header .profile-wraper .profile img {
+            width: 90%;
+            margin: 0 auto;
+            display: block;
+            border: 0.3rem solid #fff;
+            transition: all 0.3s ease;
+            box-shadow: 1px 2px 10px 2px rgba(168, 171, 175, 0.2); }
+            main #home .header .profile-wraper .profile img:hover {
+              box-shadow: 1px 10px 10px 2px rgba(168, 171, 175, 0.2); }
+      main #home .header .info {
+        color: #fff;
+        padding: 70px 0px; }
+        main #home .header .info h1 {
+          font-family: "Archivo Black";
+          font-size: 4.8rem;
+          font-weight: bolder; }
+        main #home .header .info .social-icons i {
+          padding: 0rem 1.5rem; }
+    main #home .about-me {
+      padding: 5rem 50px; }
+      main #home .about-me .intro h3 {
+        margin-top: 0;
+        font-family: "Archivo Black"; }
+      main #home .about-me .intro span {
+        color: #f44336; }
+      main #home .about-me .intro p {
+        color: #494949; }
+      main #home .about-me .intro button {
+        border: none;
+        background: #fff;
+        box-shadow: 1px 2px 5px rgba(150, 150, 150, 0.8), -1px 2px 5px rgba(150, 150, 150, 0.2);
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-size: 1.28rem;
+        font-weight: bold;
+        padding: 1rem 2rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        transition: all 0.3s ease-in-out; }
+        main #home .about-me .intro button:hover {
+          box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9); }
+      main #home .about-me address {
+        color: #a8abaf; }
+        main #home .about-me address p:nth-child(4) {
+          color: #f44336; }
+        main #home .about-me address abbr {
+          border: none;
+          text-decoration: none; }
+
+@media (max-width: 960px) {
+  nav {
+    display: none; }
+
+  .mob-nav {
+    display: block !important;
+    background-color: #f44336; }
+
+  header {
+    padding: 0 !important; }
+
+  .profile img {
+    width: 60% !important; } }
+
+/*# sourceMappingURL=style.css.map */

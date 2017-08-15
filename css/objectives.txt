@@ -1,0 +1,30 @@
+
+
+- What I want from this project:
+  1- practicing advanced SASS.
+  2- practicing Git using command line.
+  3- using DRY code.
+  4- using Semantic Mark-up.
+  5- value added to my portfolio.
+_______________________________________________________________
+
+- Notes:
+  => Don't mess with watched stylesheet.css (sass comments).
+  => Always check for type error first.
+  => In short-hand value, the missing argument takes a value     of its brother.
+  => Don't forget 'content' in pseudo-elements.
+  => Binding scroll events should be to window object.
+  => Scroll top values are simultaneously.
+  => $ready() is used when you want to bind an event when the    dom is loaded.
+  => NEVER NEVEEEER style a bootstrap div.
+  => negaitive margin/padding should out of available area.
+  => Try to imagine the final product for easier design.
+  => Spaces in code will never hurt.
+  => Fixed nav should positioned Fixed ALL THE TIME.
+_______________________________________________________________
+
+- VS code tips:
+  => indentation should be either spaces or tabs. 
+_______________________________________________________________
+- Side tasks:
+  => Investigate why font awesome is not working.
