@@ -19,7 +19,6 @@ $(function(){
 			$header.removeClass('fixed-nav');
 		}	
 	}
-	//var animateMobMenu = ;
 
 	$menuButton.on('click', function(){
 

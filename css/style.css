@@ -20,23 +20,44 @@ header nav > ul li, header .mob-nav ul li {
   header nav > ul li:hover, header .mob-nav ul li:hover {
     color: #494949; }
 
-main #home, main #resume {
+main #home, main #resume, main #services {
   border-radius: 2rem;
-  overflow: hidden;
   background-color: #fff;
   position: absolute;
+  margin: 0rem 1rem 5rem;
+  overflow: hidden;
   display: block;
   left: 0;
+  right: 0;
   top: 10rem;
   opacity: 0;
   transform: scale(0);
   box-shadow: 1px 10px 20px 2px rgba(168, 171, 175, 0.2), -10px 1px 20px 2px rgba(168, 135, 134, 0.2); }
 
-main #home .about-me .intro button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item {
+main #home .about-me .intro button, main #resume button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item {
   transition: all 0.3s ease-in-out;
   box-shadow: 1px 2px 5px rgba(150, 150, 150, 0.8), -1px 2px 5px rgba(150, 150, 150, 0.2); }
-  main #home .about-me .intro button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover {
+  main #home .about-me .intro button:hover, main #resume button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover {
     box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9); }
+
+main #resume .header h1, main #services .header h1 {
+  background-color: #f44336;
+  margin: 0;
+  padding: 3rem 0;
+  font-size: 4.8rem;
+  color: #fff; }
+
+main #home .about-me .intro button, main #resume button {
+  border: none;
+  outline: none;
+  background: #fff;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-size: 1.28rem;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem; }
 
 .animate-card {
   transform: scale(1) !important;
@@ -51,7 +72,7 @@ body {
   overflow-x: hidden;
   min-height: 800px;
   background-color: #f7f7f7; }
-  body h1, body h2, body h3 {
+  body h1, body h2, body h3, body h4 {
     font-family: "Archivo black"; }
 
 .fixed-nav {
@@ -97,7 +118,8 @@ header {
       color: #fff;
       font-size: 1.6rem; }
     header .mob-nav i {
-      float: right; }
+      float: right;
+      padding-right: 2rem; }
       header .mob-nav i:before {
         color: #fff;
         font-size: 2.5rem; }
@@ -174,16 +196,6 @@ main {
       color: #f44336; }
     main #home .about-me .intro p {
       color: #494949; }
-    main #home .about-me .intro button {
-      border: none;
-      background: #fff;
-      border-radius: 5px;
-      text-transform: uppercase;
-      font-size: 1.28rem;
-      font-weight: bold;
-      padding: 1rem 2rem;
-      margin-top: 3rem;
-      margin-bottom: 3rem; }
     main #home .about-me address {
       color: #a8abaf; }
       main #home .about-me address p:nth-child(4) {
@@ -191,12 +203,10 @@ main {
       main #home .about-me address abbr {
         border: none;
         text-decoration: none; }
-  main #resume .header h1 {
-    background-color: #f44336;
-    margin: 0;
-    padding: 3rem 0;
-    font-size: 4.8rem;
-    color: #fff; }
+  main #resume button {
+    display: block;
+    width: 20rem;
+    margin: 3rem auto 0rem; }
   main #resume .resume-body {
     padding: 5rem 70px; }
     main #resume .resume-body h3 {
@@ -239,8 +249,82 @@ main {
           top: 3rem;
           transform: translate(-4rem, -50%);
           z-index: 1; }
+    main #resume .resume-body .skills {
+      padding-top: 3rem;
+      padding-bottom: 3rem; }
+      main #resume .resume-body .skills p {
+        font-weight: bolder; }
+      main #resume .resume-body .skills .design div, main #resume .resume-body .skills .coding div {
+        height: 1rem;
+        padding: 0;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+        background-color: #eee;
+        position: relative; }
+        main #resume .resume-body .skills .design div span, main #resume .resume-body .skills .coding div span {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-radius: 0.5rem;
+          display: inline-block;
+          height: 100%;
+          background-color: #f44336; }
+      main #resume .resume-body .skills .design .rating-1 span, main #resume .resume-body .skills .coding .rating-1 span {
+        width: 81%; }
+      main #resume .resume-body .skills .design .rating-2 span, main #resume .resume-body .skills .coding .rating-2 span {
+        width: 77%; }
+      main #resume .resume-body .skills .design .rating-3 span, main #resume .resume-body .skills .coding .rating-3 span {
+        width: 87%; }
+      main #resume .resume-body .skills .design .rating-4 span, main #resume .resume-body .skills .coding .rating-4 span {
+        width: 89%; }
+      main #resume .resume-body .skills .design .rating-5 span, main #resume .resume-body .skills .coding .rating-5 span {
+        width: 75%; }
+      main #resume .resume-body .skills .design .rating-6 span, main #resume .resume-body .skills .coding .rating-6 span {
+        width: 71%; }
+  main #services .my-services {
+    padding: 3rem; }
+    main #services .my-services h4, main #services .my-services p {
+      font-size: 1.6rem;
+      text-align: center; }
+    main #services .my-services .img-wraper {
+      width: 12rem;
+      height: 12rem;
+      border-radius: 50%;
+      background-color: #eee;
+      margin: 0 auto;
+      position: relative;
+      transition: all 0.5s cubic-bezier(0.74, 0.08, 0.18, 1.46); }
+      main #services .my-services .img-wraper:hover {
+        box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2rem); }
+      main #services .my-services .img-wraper img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(50%, 50%);
+        width: 50%;
+        display: block;
+        margin: auto; }
+    main #services .my-services > h4 {
+      padding: 2rem 4rem;
+      text-align: left;
+      font-size: 1.92rem; }
+      main #services .my-services > h4 span {
+        color: #f44336; }
+  main #services .clients {
+    padding: 3rem 5rem; }
+    main #services .clients .client-wraper {
+      width: 65%;
+      margin: 0 auto; }
+      main #services .clients .client-wraper img {
+        display: block;
+        opacity: 0.5;
+        width: 100%;
+        transition: all 0.5s ease; }
+        main #services .clients .client-wraper img:hover {
+          opacity: 1 !important; }
 
-@media (min-resolution: 192dpi) {
+@media (min-resolution: 192dpi) and (orientation: portrait) {
   html {
     font-size: 20px; } }
 @media (max-width: 960px) {
@@ -260,6 +344,9 @@ main {
     padding: 0 !important; }
 
   .profile img {
-    width: 60% !important; } }
+    width: 60% !important; }
+
+  .my-services .img-wraper {
+    margin-top: 3rem !important; } }
 
 /*# sourceMappingURL=style.css.map */
