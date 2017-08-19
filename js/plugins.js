@@ -44,7 +44,19 @@ $(function(){
 	$liNav.on('click', function(){
 		var $thisID = $(this).attr('data-id');
 		$('#' + $thisID ).addClass('animate-card', 500).siblings().removeClass('animate-card', 500);
+	});
+
+	var $testimonial = $('.testimonials'),
+					$rightArrow = $('.fa-arrow-right'),
+					$leftArrow = $('.fa-arrow-left');
+		
+	$rightArrow.on('click', function(){
+		$testimonial.animate({marginLeft: '-50%'}, 500);
+	});
+	$leftArrow.on('click', function () {
+		$testimonial.animate({ marginLeft: '0%' }, 500);
 	})
+
 	
 
 

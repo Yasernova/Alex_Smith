@@ -326,6 +326,8 @@ main
 	//============== Srevices Card ================
 	#services
 		@extend %cardStyle
+		h3
+			padding: 0rem 4rem 4rem
 		.header h1
 			@extend %cardHeader
 		.my-services
@@ -370,6 +372,82 @@ main
 					transition: all 0.5s ease
 					&:hover
 						opacity: 1 !important
+		.testimonials
+			width: 150%
+			padding: 20px 30px
+			margin-left: 0
+			margin-right: 0
+			.tst-item
+				width: 95%
+				margin: 3rem auto
+				border: 1px solid $darkColor
+				border-top: 2px solid $mainColor 
+				.person-profile
+					width: 70%
+					//transform: translateY(-220%)
+					margin: 0 auto
+					margin-top: -5rem
+					p 
+						display: inline
+						float: left
+						color: #aeaeae
+						font-size: 1.2rem
+					img 
+						float: left
+						width: 30%
+						display: inline-block
+						border-radius: 50%
+						margin-right: 10px
+				&>p 
+					clear: both
+					padding: 2.5rem 1rem
+					color: $darkColor
+		.navigation
+			width: 7rem
+			margin: 0 auto
+			display: flex
+			justify-content: space-around
+			i:hover
+				cursor: pointer
+		.pricing
+			padding: 0 4rem
+			.plan
+				width: 95%
+				margin: 3rem auto
+				padding: 3rem 20%
+				border: 1px solid #eee
+				transition: all 0.2s ease-in-out
+				&:hover
+					box-shadow:  0 7px 12px rgba(0, 0, 0, 0.15)
+					transform: translateY(-2rem)
+				span 
+					display: block
+					text-align: center
+					&.price
+						font-size: 3*$mainSize
+						padding-top: 3rem
+						&+span 
+							color: #aeaeae
+							font-size: 1.2rem
+				button
+					display: block
+					width: 75%
+					margin: 2rem auto
+					padding: 1rem 1rem
+					outline: none
+					border: none
+					background-color: $mainColor
+					color: #fff
+					border-radius: 2px
+				p 
+					line-height: 4rem
+			.active-plan
+				@extend %shadow
+				&>span:first-child
+					width: 5rem
+					margin: 0 auto
+					border-bottom: 2px solid $mainColor
+
 
 
 @media (min-resolution: 192dpi) AND (orientation: portrait)
@@ -392,6 +470,10 @@ main
 		width: 60% !important
 	.my-services .img-wraper
 		margin-top: 3rem !important
+	.testimonials
+		margin-left: 0 !important
+		.navigation
+			display: none !important
 
 
 					

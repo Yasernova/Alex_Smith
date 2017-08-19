@@ -34,10 +34,10 @@ main #home, main #resume, main #services {
   transform: scale(0);
   box-shadow: 1px 10px 20px 2px rgba(168, 171, 175, 0.2), -10px 1px 20px 2px rgba(168, 135, 134, 0.2); }
 
-main #home .about-me .intro button, main #resume button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item {
+main #home .about-me .intro button, main #resume button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item, main #services .pricing .active-plan {
   transition: all 0.3s ease-in-out;
   box-shadow: 1px 2px 5px rgba(150, 150, 150, 0.8), -1px 2px 5px rgba(150, 150, 150, 0.2); }
-  main #home .about-me .intro button:hover, main #resume button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover {
+  main #home .about-me .intro button:hover, main #resume button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover, main #services .pricing .active-plan:hover {
     box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9); }
 
 main #resume .header h1, main #services .header h1 {
@@ -281,6 +281,8 @@ main {
         width: 75%; }
       main #resume .resume-body .skills .design .rating-6 span, main #resume .resume-body .skills .coding .rating-6 span {
         width: 71%; }
+  main #services h3 {
+    padding: 0rem 4rem 4rem; }
   main #services .my-services {
     padding: 3rem; }
     main #services .my-services h4, main #services .my-services p {
@@ -323,6 +325,78 @@ main {
         transition: all 0.5s ease; }
         main #services .clients .client-wraper img:hover {
           opacity: 1 !important; }
+  main #services .testimonials {
+    width: 150%;
+    padding: 20px 30px;
+    margin-left: 0;
+    margin-right: 0; }
+    main #services .testimonials .tst-item {
+      width: 95%;
+      margin: 3rem auto;
+      border: 1px solid #a8abaf;
+      border-top: 2px solid #f44336; }
+      main #services .testimonials .tst-item .person-profile {
+        width: 70%;
+        margin: 0 auto;
+        margin-top: -5rem; }
+        main #services .testimonials .tst-item .person-profile p {
+          display: inline;
+          float: left;
+          color: #aeaeae;
+          font-size: 1.2rem; }
+        main #services .testimonials .tst-item .person-profile img {
+          float: left;
+          width: 30%;
+          display: inline-block;
+          border-radius: 50%;
+          margin-right: 10px; }
+      main #services .testimonials .tst-item > p {
+        clear: both;
+        padding: 2.5rem 1rem;
+        color: #a8abaf; }
+  main #services .navigation {
+    width: 7rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around; }
+    main #services .navigation i:hover {
+      cursor: pointer; }
+  main #services .pricing {
+    padding: 0 4rem; }
+    main #services .pricing .plan {
+      width: 95%;
+      margin: 3rem auto;
+      padding: 3rem 20%;
+      border: 1px solid #eee;
+      transition: all 0.2s ease-in-out; }
+      main #services .pricing .plan:hover {
+        box-shadow: 0 7px 12px rgba(0, 0, 0, 0.15);
+        transform: translateY(-2rem); }
+      main #services .pricing .plan span {
+        display: block;
+        text-align: center; }
+        main #services .pricing .plan span.price {
+          font-size: 4.8rem;
+          padding-top: 3rem; }
+          main #services .pricing .plan span.price + span {
+            color: #aeaeae;
+            font-size: 1.2rem; }
+      main #services .pricing .plan button {
+        display: block;
+        width: 75%;
+        margin: 2rem auto;
+        padding: 1rem 1rem;
+        outline: none;
+        border: none;
+        background-color: #f44336;
+        color: #fff;
+        border-radius: 2px; }
+      main #services .pricing .plan p {
+        line-height: 4rem; }
+    main #services .pricing .active-plan > span:first-child {
+      width: 5rem;
+      margin: 0 auto;
+      border-bottom: 2px solid #f44336; }
 
 @media (min-resolution: 192dpi) and (orientation: portrait) {
   html {
@@ -347,6 +421,11 @@ main {
     width: 60% !important; }
 
   .my-services .img-wraper {
-    margin-top: 3rem !important; } }
+    margin-top: 3rem !important; }
+
+  .testimonials {
+    margin-left: 0 !important; }
+    .testimonials .navigation {
+      display: none !important; } }
 
 /*# sourceMappingURL=style.css.map */
