@@ -1,7 +1,7 @@
 
 $(function(){
 
- 	var $win = $(window);
+ var $win = $(window);
 
 	var $header = $('header'),
 		$mobMenu = $('.mob-nav ul'),
@@ -57,6 +57,20 @@ $(function(){
 		$testimonial.animate({ marginLeft: '0%' }, 500);
 	})
 
+	var $navPortItem = $('.btns button'),
+					$portItem = $('.port-item');
+	
+	$navPortItem.on('click', function(){
+		
+		var itemCat = $('.port-item#' + $(this).attr('id')),
+						notItemCat = $('div.port-item').not(itemCat);
+		if($(this).attr('id') == 'all'){
+			$portItem.css({ transform: 'scale(1)'}).show(500);
+		}else{
+			itemCat.css({ transform: 'scale(1)'}).show(500);
+			notItemCat.css({ transform: 'scale(0)'}).hide(500);
+		}
+	});
 	
 
 

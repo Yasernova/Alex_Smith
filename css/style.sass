@@ -447,6 +447,58 @@ main
 					width: 5rem
 					margin: 0 auto
 					border-bottom: 2px solid $mainColor
+	#portifolio
+		@extend %cardStyle
+		.header h1
+			@extend %cardHeader
+		.btns
+			display: flex
+			justify-content: center
+			button 
+				margin: 1rem
+				@extend %btnStyle
+				color: #aeaeae
+				padding: 0.3rem
+		img 
+			width: 100%
+		.container
+			padding: 1rem 5rem
+			transition: all 1s ease
+		.port-item
+			padding: 0
+			.img-wraper
+				margin: 0.5rem
+				position: relative
+				overflow: hidden
+				&:hover .img-preview
+					top: 0
+				.img-preview
+					position: absolute
+					top: 100%
+					left: 0
+					width: 100%
+					height: 100%
+					background-color: $mainColor
+					opacity: 0.85
+					z-index: 1
+					padding: 3rem
+					transition: all 0.3s cubic-bezier(0.42, 0, 0.53, 1.38)
+					p 
+						color: #fff
+					span
+						position: absolute
+						bottom: 3rem
+						left: 3rem
+						color: #fff
+					i 
+						position: absolute
+						bottom: 3rem
+						right: 3rem
+						&:before
+							color: #fff
+
+
+
 
 
 
