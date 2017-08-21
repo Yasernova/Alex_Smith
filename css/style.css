@@ -20,7 +20,7 @@ header nav > ul li, header .mob-nav ul li {
   header nav > ul li:hover, header .mob-nav ul li:hover {
     color: #494949; }
 
-main #home, main #resume, main #services, main #portifolio {
+main #home, main #resume, main #services, main #portifolio, main #blog {
   border-radius: 2rem;
   background-color: #fff;
   position: absolute;
@@ -34,13 +34,13 @@ main #home, main #resume, main #services, main #portifolio {
   transform: scale(0);
   box-shadow: 1px 10px 20px 2px rgba(168, 171, 175, 0.2), -10px 1px 20px 2px rgba(168, 135, 134, 0.2); }
 
-main #home .about-me .intro button, main #resume button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item, main #services .pricing .active-plan {
+main #home .about-me .intro button, main #resume button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item, main #services .pricing .active-plan, main #blog .article {
   transition: all 0.3s ease-in-out;
   box-shadow: 1px 2px 5px rgba(150, 150, 150, 0.8), -1px 2px 5px rgba(150, 150, 150, 0.2); }
-  main #home .about-me .intro button:hover, main #resume button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover, main #services .pricing .active-plan:hover {
+  main #home .about-me .intro button:hover, main #resume button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover, main #services .pricing .active-plan:hover, main #blog .article:hover {
     box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9); }
 
-main #resume .header h1, main #services .header h1, main #portifolio .header h1 {
+main #resume .header h1, main #services .header h1, main #portifolio .header h1, main #blog .header {
   background-color: #f44336;
   margin: 0;
   padding: 3rem 0;
@@ -441,6 +441,50 @@ main {
           right: 3rem; }
           main #portifolio .port-item .img-wraper .img-preview i:before {
             color: #fff; }
+  main #blog .article {
+    margin: 2rem 2rem; }
+    main #blog .article .img-wraper {
+      position: relative; }
+      main #blog .article .img-wraper img {
+        width: 100%; }
+      main #blog .article .img-wraper span {
+        background-color: #fff;
+        color: #f44336;
+        font-size: 1.6rem;
+        display: inline-block;
+        padding: 0.5rem 1rem;
+        position: absolute;
+        top: 3rem;
+        right: 3rem;
+        z-index: 2; }
+      main #blog .article .img-wraper i {
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.4s ease; }
+        main #blog .article .img-wraper i:before {
+          position: absolute;
+          font-size: 4rem;
+          color: #fff;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        main #blog .article .img-wraper i:hover {
+          opacity: 1;
+          cursor: pointer; }
+    main #blog .article .disc {
+      padding: 1rem 2rem; }
+      main #blog .article .disc p:first-child {
+        color: #a8abaf; }
+      main #blog .article .disc p:nth-child(2) {
+        font-family: "Archivo black"; }
+      main #blog .article .disc p {
+        text-align: center; }
 
 @media (min-resolution: 192dpi) and (orientation: portrait) {
   html {
