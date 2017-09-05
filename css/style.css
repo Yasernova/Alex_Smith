@@ -20,7 +20,7 @@ header nav > ul li, header .mob-nav ul li {
   header nav > ul li:hover, header .mob-nav ul li:hover {
     color: #494949; }
 
-main #home, main #resume, main #services, main #portifolio, main #blog {
+main #home, main #resume, main #services, main #portifolio, main #blog, main #contact {
   border-radius: 2rem;
   background-color: #fff;
   position: absolute;
@@ -34,20 +34,21 @@ main #home, main #resume, main #services, main #portifolio, main #blog {
   transform: scale(0);
   box-shadow: 1px 10px 20px 2px rgba(168, 171, 175, 0.2), -10px 1px 20px 2px rgba(168, 135, 134, 0.2); }
 
-main #home .about-me .intro button, main #resume button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item, main #services .pricing .active-plan, main #blog .article {
+main #home .about-me .intro button, main #resume button, main #resume .resume-body .history .edu-item, main #resume .resume-body .history .exp-item, main #services .pricing .active-plan, main #blog .article, main #contact .contact-form button {
   transition: all 0.3s ease-in-out;
   box-shadow: 1px 2px 5px rgba(150, 150, 150, 0.8), -1px 2px 5px rgba(150, 150, 150, 0.2); }
-  main #home .about-me .intro button:hover, main #resume button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover, main #services .pricing .active-plan:hover, main #blog .article:hover {
-    box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9); }
+  main #home .about-me .intro button:hover, main #resume button:hover, main #resume .resume-body .history .edu-item:hover, main #resume .resume-body .history .exp-item:hover, main #services .pricing .active-plan:hover, main #blog .article:hover, main #contact .contact-form button:hover {
+    box-shadow: 0px 4px 5px rgba(150, 150, 150, 0.9);
+    transform: translateY(-5%); }
 
-main #resume .header h1, main #services .header h1, main #portifolio .header h1, main #blog .header {
+main #resume .header h1, main #services .header h1, main #portifolio .header h1, main #blog .header, main #contact .header {
   background-color: #f44336;
   margin: 0;
   padding: 3rem 0;
   font-size: 4.8rem;
   color: #fff; }
 
-main #home .about-me .intro button, main #resume button, main #portifolio .btns button {
+main #home .about-me .intro button, main #resume button, main #portifolio .btns button, main #contact .contact-form button {
   border: none;
   outline: none;
   background: #fff;
@@ -485,6 +486,77 @@ main {
         font-family: "Archivo black"; }
       main #blog .article .disc p {
         text-align: center; }
+  main #contact .contact-dtls, main #contact .contact-form {
+    padding: 40px; }
+  main #contact h3 > span {
+    color: #f44336; }
+  main #contact .contact-dtls #map {
+    height: 20rem; }
+  main #contact .contact-dtls .adrs {
+    padding-top: 3rem; }
+    main #contact .contact-dtls .adrs p {
+      line-height: 5rem;
+      margin: 0.5rem; }
+    main #contact .contact-dtls .adrs i {
+      display: inline-block;
+      transform: translateY(35%);
+      background-color: #eee;
+      border-radius: 50%;
+      width: 5rem;
+      height: 5rem;
+      position: relative; }
+      main #contact .contact-dtls .adrs i:before {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #f44336;
+        font-size: 2.5rem; }
+  main #contact .contact-form .spread-after {
+    border-bottom-color: transparent !important; }
+    main #contact .contact-form .spread-after:after {
+      transition: all 0.5s ease-in-out;
+      width: 100% !important; }
+  main #contact .contact-form .input-feild {
+    margin: 2rem 0;
+    position: relative;
+    border-bottom: 1px #999 solid;
+    position: relative;
+    transition: all 0.5s ease-in-out; }
+    main #contact .contact-form .input-feild:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0%;
+      height: 2px;
+      background-color: #f44336; }
+    main #contact .contact-form .input-feild label {
+      transition: all 0.5s ease-in-out;
+      position: absolute;
+      left: 5rem;
+      top: 1rem;
+      color: #aeaeae;
+      font-size: 1.92rem;
+      z-index: -1; }
+    main #contact .contact-form .input-feild i:before {
+      width: 5%;
+      font-size: 3rem;
+      color: #aeaeae; }
+    main #contact .contact-form .input-feild .in-use:before {
+      color: #f44336; }
+    main #contact .contact-form .input-feild input, main #contact .contact-form .input-feild textarea {
+      background-color: transparent;
+      padding: 1rem;
+      width: 90%;
+      border: none; }
+      main #contact .contact-form .input-feild input:focus, main #contact .contact-form .input-feild textarea:focus {
+        outline: none;
+        border: none; }
+  main #contact .contact-form button {
+    background-color: #f44336;
+    color: #fff; }
 
 @media (min-resolution: 192dpi) and (orientation: portrait) {
   html {

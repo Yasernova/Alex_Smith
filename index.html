@@ -571,7 +571,60 @@
 				</div>
 			</div>
 		</section>
+		<section id="contact">
+			<div class="header">
+				<h1 class="text-center">contact</h1>
+			</div>
+			<div class="contact-info row">
+				<div class="col-xs-12 col-md-6">
+					<div class="contact-dtls">
+						<h3>Get in <span>touch</span></h3>
+						<div id="map">
+							<script>
+								var map;
+								function initMap() {
+									map = new google.maps.Map(document.getElementById('map'), {
+										center: { lat: 48.8566, lng: 2.3522 },
+										zoom: 10
+									});
+								}
+							</script>
+						</div>
+						<div class="adrs">
+							<p><i class="fa fa-map-marker" aria-hidden="true"></i> Giza, Egypt</p>
+							<p><i class="fa fa-envelope" aria-hidden="true"></i> ahmed.yassertaha@gmail.com</p>
+							<p><i class="fa fa-phone" aria-hidden="true"></i> +20-0123456789</p>
+							<p><i class="fa fa-check" aria-hidden="true"></i> freelance available</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-6">
+					<div class="contact-form">
+						<h3>Contact <span>form</span></h3>
+						<form>
+							<div class="input-feild">
+								<label>Full Name</label>
+								<i class="fa fa-user" aria-hidden="true"></i>
+									<input class="inpt" type="text" required>
+								</div>
+								<div class="input-feild">
+									<label>E-mail Address</label>
+									<i class="fa fa-envelope" aria-hidden="true"></i>
+									<input type="text" required>
+								</div>
+								<div class="input-feild">
+									<label>Messege for me</label>
+									<i class="fa fa-comment" aria-hidden="true"></i>
+								<textarea cols="30" rows="10"></textarea>
+							</div>
+							<button>Submit</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
 	</main>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAikxjCz6ofUL2O_v67REQo876e8vAaPTs&callback=initMap" async defer></script>
 	<script src="js\jquery-3.2.0.min.js"></script>
 	<script src="js\plugins.js"></script>
 </body>
