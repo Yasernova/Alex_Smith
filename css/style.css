@@ -220,7 +220,8 @@ main {
       color: #f44336; }
     main #resume .resume-body .history {
       display: flex;
-      justify-content: space-between; }
+      justify-content: space-between;
+      flex-wrap: wrap; }
       main #resume .resume-body .history .education, main #resume .resume-body .history .experience {
         border-left: 2px solid #eee;
         padding: 0 3rem; }
@@ -558,10 +559,7 @@ main {
     background-color: #f44336;
     color: #fff; }
 
-@media (min-resolution: 192dpi) and (orientation: portrait) {
-  html {
-    font-size: 20px; } }
-@media (max-width: 960px) {
+@media screen and (max-width: 960px) {
   nav {
     display: none !important; }
 
@@ -587,5 +585,8 @@ main {
     margin-left: 0 !important; }
     .testimonials .navigation {
       display: none !important; } }
+@media (min-resolution: 192dpi) and (orientation: portrait) {
+  html {
+    font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
