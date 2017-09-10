@@ -30,11 +30,10 @@ $(function(){
 		$mobMenu.toggleClass('hide-menu');
 	}
 	);
-}());
 
 //==============================================
 	/* switching menu items styles*/
-	(function(){
+	
 		var $liNav = $('[data-id]'),
 						$largeScrMenu = $('nav li'),
 						$mobScrMenu = $('.mob-nav li');
@@ -91,11 +90,8 @@ $(function(){
 
 	//==================================================
 
-		var $contactInput = $('#contact input, textarea'),
-						$inputLabel = $('#contact label'),
-						$inputAfter = $('.input-feild:after');
-						console.log($inputAfter);
-
+		var $contactInput = $('#contact input, textarea');
+		
 		$contactInput.on({
 			'focus': function() {
 				$(this).siblings('label').css({ 
