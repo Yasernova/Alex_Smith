@@ -585,7 +585,7 @@ main {
     margin-left: 0 !important; }
     .testimonials .navigation {
       display: none !important; } }
-@media (min-resolution: 192dpi) and (orientation: portrait) {
+@media (min-resolution: 192dpi) and (orientation: landscape) {
   html {
     font-size: 20px; } }
 
