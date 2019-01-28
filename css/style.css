@@ -45,7 +45,7 @@ main #resume .header h1, main #services .header h1, main #portifolio .header h1,
   background-color: #f44336;
   margin: 0;
   padding: 3rem 0;
-  font-size: 4.8rem;
+  font-size: 2rem;
   color: #fff; }
 
 main #home .about-me .intro button, main #resume button, main #portifolio .btns button, main #contact .contact-form button {
